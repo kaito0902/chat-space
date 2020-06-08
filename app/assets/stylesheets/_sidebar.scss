@@ -1,0 +1,48 @@
+.Side-bar {
+  width: 300px;
+}
+
+.Side-bar__header {
+  height: 100px;
+  background-color: #253141;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Sede-bar__list {
+  height: calc(100vh - 100px);
+  background-color: #2f3e51;
+  padding: 20px 20px 0px 20px;
+}
+
+.Side-bar__textbox {
+  height: 20px;
+  width: 260px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Side-bar__useruame {
+  height: 20px;
+}
+
+.Side-bar__iconlist {
+  height: 20px;
+  width: 60px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.icon {
+  color: #ffffff;
+  margin-right: 5px;
+}
+
+.usericon {
+  color: #ffffff;
+}
+
+
+

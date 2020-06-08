@@ -1,0 +1,130 @@
+.Main-chat {
+  width: calc(100vw - 300px);
+}
+
+.Main-chat__header {
+  height: 100px;
+  margin:0 40px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #eee;
+}
+
+.Main-chat__chatspace {
+  height: calc(100vh - 190px);
+  background-color: #fafafa;
+  padding: 35px 40px;
+}
+
+.Footer {
+  height: 90px;
+  background-color: #d2d2d2;
+  padding: 20px 40px;
+}
+
+.Main-header__namebox {
+  margin-top: 35px;
+}
+
+.Main-header__groupname {
+  margin-bottom: 15px;
+  font-size: 20px;
+  color: #333333;
+}
+
+.Main-header__membername {
+  font-size: 12px;
+  color: #999999;
+  display: flex;
+  list-style: none;
+}
+
+.Group {
+  color: #ffffff;
+}
+
+.Group-name {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.Group-messages {
+  font-size: 11px;
+  margin-bottom: 40px;
+}
+
+.Editbtn {
+  height: 40px;
+  margin-top: 28px;
+  border: solid 1px #38aef0;
+  padding: 0 20px;
+  position: absolute;
+  line-height: 40px;
+  right: 40px;
+  color: #38aef0;
+}
+
+.Message {
+  padding-bottom: 46px;
+}
+
+.Message__upper-info {
+  display: flex;
+  padding-bottom: 12px;
+}
+
+.Message-talker {
+  color: #333333;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.Message-date {
+  color: #999999;
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+.Message__text {
+  color: #434a54;
+  font-size: 14px;
+}
+
+.new_message {
+  display: flex;
+}
+
+.input-box {
+  position: relative;
+  width: 100%;
+}
+.input-box__text {
+  height: 50px;
+  width: 100%;
+  padding: 0 40px 0 10px;
+  color: #434a54;
+  border-style: none;
+}
+
+.input-box__image {
+  font-size: 1.3rem;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.input-box__image__file {
+  display: none;
+}
+
+.submit-btn {
+  width: 100px;
+    height: 50px;
+    padding: 0 30px;
+    margin-left: 15px;
+    background-color: #38aef0;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
