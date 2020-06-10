@@ -14,6 +14,7 @@
   height: calc(100vh - 190px);
   background-color: #fafafa;
   padding: 35px 40px;
+  overflow: scroll;
 }
 
 .Footer {
@@ -37,6 +38,7 @@
   color: #999999;
   display: flex;
   list-style: none;
+  padding-left: 5px;
 }
 
 .Group {
