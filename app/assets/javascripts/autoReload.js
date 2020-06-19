@@ -3,25 +3,6 @@ $(function(){
     if ( message.image ) {
       let html =
         `<div class="Message" data-message-id=${message.id}>
-          <div class="Message__upper-info">
-            <div class="Message-talker">
-              ${message.user_name}
-            </div>
-            <div class="Message-date">
-              ${message.created_at}
-            </div>
-          </div>
-          <div class="Message">
-            <p class="Message__text">
-              ${message.content}
-            </p>
-            <img class="Message__image" src="${message.image}">
-          </div>
-        </div>`
-      return html;
-    } else {
-      let html =
-      `<div class="Message" data-message-id=${message.id}>
         <div class="Message__upper-info">
           <div class="Message-talker">
             ${message.user_name}
@@ -30,19 +11,39 @@ $(function(){
             ${message.created_at}
           </div>
         </div>
-        <div class="Message">
+        <div class="lower-message">
           <p class="Message__text">
             ${message.content}
           </p>
+          <img class="Message__image" src="${message.image}">
         </div>
       </div>`
-      return html;
+    return html;
+  } else {
+    let html =
+    `<div class="Message" data-message-id=${message.id}>
+    <div class="Message__upper-info">
+      <div class="Message-talker">
+        ${message.user_name}
+      </div>
+      <div class="Message-date">
+        ${message.created_at}
+      </div>
+    </div>
+    <div class="lower-message">
+      <p class="Message__text">
+        ${message.content}
+      </p>
+      </div>
+    </div>`
+    return html;
     };
   }
 
 let reloadMessages = function() {
     //カスタムデータ属性を利用し、ブラウザに表示されている最新メッセージのidを取得
     let last_message_id = $('.Message:last').data("message-id");
+    console.log(last_message_id)
     $.ajax({
       //ルーティングで設定した通り/groups/id番号/api/messagesとなるよう文字列を書く
       url: "api/messages",
